@@ -65,14 +65,28 @@ const Front = () => {
 
       <div style={styles.report}>
         <label htmlFor="traininginput" style={styles.label}>Training Name:</label>
-        <input
+        <select
           id="traininginput"
           type="text"
           placeholder="e.g., 'Post Graduate Program in Java'"
           value={trainingName}
           onChange={(e) => setTrainingName(e.target.value)}
           style={styles.input}
-        />
+        > 
+          <option value="">--Select Training--</option>
+          <option value="Post Graduate Program in Data Science with Artificial Intelligence and Machine Learning">Post Graduate Program in Data Science with Artificial Intelligence and Machine Learning</option>
+          <option value="Post Graduate Program in Data Analytics with Machine Learning">Post Graduate Program in Data Analytics with Machine Learning</option>
+          <option value="Post Graduate Programme in Cloud Computing with AWS and GCP">Post Graduate Programme in Cloud Computing with AWS and GCP</option>
+          <option value="Post Graduate Programme in Cyber Security">Post Graduate Programme in Cyber Security</option>
+          <option value="Post Graduate Programme in DevOPS">Post Graduate Programme in DevOPS</option>
+          <option value="Post Graduate Program in Web Development">Post Graduate Program in Web Development</option>
+          <option value="Post Graduate Program in Manual Testing and Automation Testing">Post Graduate Program in Manual Testing and Automation Testing</option>
+          <option value="Post Graduate Program in Java">Post Graduate Program in Java</option>
+          <option value="Post Graduate Program in Javascript Web Development">Post Graduate Program in Javascript Web Development</option>
+          <option value="Post Graduate Program in Python Programming">Post Graduate Program in Python Programming</option>
+          <option value="Post Graduate Program in React JS">Post Graduate Program in React JS</option>
+          <option value="Post Graduate Program in React Native Mobile Application Development">Post Graduate Program in React Native Mobile Application Development</option>
+        </select>
       </div>
 
       <div style={styles.report}>
@@ -166,7 +180,7 @@ const styles = {
     marginBottom: '20px',
   },
   report: {
-    marginBottom: '15px',
+    marginBottom: '18px',
   },
   label: {
     display: 'block',
